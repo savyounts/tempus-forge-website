@@ -12,12 +12,14 @@ nav a{
   color: #bd8647;
   font-family: 'Dosis-light', sans-serif;
   font-size: 1.25em;
+  transition: color .5s
 
 }
 
 nav a:hover{
   text-decoration: none;
   color: white;
+
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------
