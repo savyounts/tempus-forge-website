@@ -1,0 +1,41 @@
+
+---------------------------------------------------------------------------------------------------------------------
+-HOME PAGE
+---------------------------------------------------------------------------------------------------------------------
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#home-logo {
+  margin:auto;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
+
+#home-logo img{
+  width: 45%;
+  display:block;
+  margin: auto;
+}
+
+---------------------------------------------------------------------------------------------------------------------
+ -FOOTER
+---------------------------------------------------------------------------------------------------------------------
+
+footer {
+  display:flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: 1em;
+}
+
+.footer-social {
+  margin: .4em;
+  width: 50%;
+}
