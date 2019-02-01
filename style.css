@@ -1,14 +1,30 @@
 /* ---------------------------------------------------------------------------------------------------------------------
 NAVIGATION
 --------------------------------------------------------------------------------------------------------------------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  align-items: center;
+  background-image: url('images/header-background.png');
+  width: 100%;
+  position: relative;
+  top: 0;
+
+}
+
+.home-header {
+  background-image: none;
+}
+
 nav {
   display: flex;
   justify-content: flex-end;
-  margin: 1em;
+
 }
 
 nav a{
-  padding: 1em;
+  padding: 0 1em;
   color: #bd8647;
   font-family: 'Dosis-light', sans-serif;
   font-size: 1.25em;
@@ -54,6 +70,41 @@ body#home {
 
 }
 
+
+/* ---------------------------------------------------------------------------------------------------------------------
+ABOUT PAGE
+--------------------------------------------------------------------------------------------------------------------- */
+.about-top {
+  display:flex;
+  height: auto;
+}
+
+.about-top img{
+  width: 50%;
+  position: absolute;
+  right: 0;
+}
+
+.about-text{
+  width: 40%;
+  margin: 3em;
+  font-family: 'Dosis', sans-serif;
+  color: #4e4d4e;
+}
+
+.about-text h1{
+  margin-bottom: .5em;
+  font-size: 3em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.about-bottom {
+  background-color:#4e4d4e;
+  display: flex;
+}
 /* ---------------------------------------------------------------------------------------------------------------------
 FOOTER
 --------------------------------------------------------------------------------------------------------------------- */
@@ -66,6 +117,11 @@ footer {
   width: 100%;
   margin-top: 1em;
   padding: .5em;
+  background-color: white;
+}
+
+.footer-home{
+  background-color: transparent;
 }
 
 .footer-social {
