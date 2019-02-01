@@ -75,26 +75,25 @@ body#home {
 ABOUT PAGE
 --------------------------------------------------------------------------------------------------------------------- */
 
-.about-top {
+.page-top {
   display:flex;
   justify-content: space-between;
   width: 100%;
 }
 
-.about-top img{
+.page-top img{
   position: relative;
   right: 0;
   object-fit: contain;
 }
 
-.about-text{
-  width: 40%;
+.page-text{
   margin: 3em;
   font-family: 'Dosis', sans-serif;
   color: #4e4d4e;
 }
 
-.about-text h1{
+.page-text h1{
   margin-bottom: .5em;
   font-size: 4vw;
 }
@@ -132,13 +131,30 @@ ABOUT PAGE
   object-fit: contain;
 }
 
-hr{
+.about-line{
   border: 0;
-    height: 3px;
-    background-color: white;
-    width: 50%;
-    margin: 0 0 1em 0;
+  height: 3px;
+  background-color: white;
+  width: 50%;
+  margin: 0 0 1em 0;
 }
+
+/* ---------------------------------------------------------------------------------------------------------------------
+PROJECTS PAGE
+--------------------------------------------------------------------------------------------------------------------- */
+.project-wrapper{
+  width: 80%;
+}
+
+
+
+.project-divider{
+  height: 3px;
+  background-color: #4e4d4e;
+  margin: auto;
+}
+
+
 /* ---------------------------------------------------------------------------------------------------------------------
 FOOTER
 --------------------------------------------------------------------------------------------------------------------- */
