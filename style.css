@@ -132,10 +132,12 @@ body#home {
 .page-wrapper{
   display:grid;
   grid-template-rows: repeat(2, auto);
+  font-family: 'Dosis', sans-serif;
 }
 .page-top {
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 0 3em;
 }
 
 .gear{
@@ -154,7 +156,6 @@ body#home {
 
 .about-bottom-text {
   margin: 3em;
-  font-family: 'Dosis', sans-serif;
   color: white;
 }
 
@@ -189,7 +190,7 @@ body#home {
   grid-template-rows: repeat(auto, minmax(50px, 1fr));
   justify-items: center;
   grid-gap: 20px;
-  padding: 3em;
+  font-family: 'Dosis', sans-serif;
   /* height: 100vh; */
 }
 
@@ -202,6 +203,7 @@ body#home {
   justify-content: center;
   border-bottom: 2px solid #4e4d4e;
   padding: 20px 100px;
+  margin: 3em;
 }
 
 .project-details {
@@ -209,7 +211,6 @@ body#home {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
   width: 80%;
-  font-family: 'Dosis', sans-serif;
   color: var(--grey);
 }
 
@@ -230,7 +231,6 @@ body#home {
   padding: 0 80px;
   color:white;
   font-size: 2.5vw;
-  font-family: 'Dosis', sans-serif;
 }
 
 
@@ -239,9 +239,104 @@ body#home {
   background-color: var(--grey);
 }
 
+/* ---------------------------------------------------------------------------------------------------------------------
+5. CAREERS PAGE
+--------------------------------------------------------------------------------------------------------------------- */
+.careers-top {
+  display:grid;
+  grid-column-gap: 40px;
+  grid-template-columns: repeat(2,auto);
+  grid-template-rows: repeat(2,auto);
+  margin: 0 3em;
+  color: var(--grey);
+}
+
+.career-heading{
+  grid-column: 1/-1;
+  margin-top: 3rem;
+
+}
+
+.career-left p{
+  font-size: 1.7vw;
+}
+
+.view-openings{
+  border:1px solid var(--orange);
+  background-color: white;
+  color: var(--orange);
+  border-radius: 10px;
+  padding: 3px 40px;
+  font-size: 1.5vw;
+  margin: 10px 0;
+  text-decoration: none;
+}
+
+.view-openings:hover{
+  text-decoration: none;
+  color: var(--orange);
+}
+
+.career-quote-block{
+  background-color: var(--orange);
+  margin: 40px 0;
+  color:white;
+  display:grid;
+  grid-template-columns: 400px 1fr;
+  align-items: center;
+  grid-gap: 40px;
+}
+
+.career-quote-block img{
+  width: 100%;
+}
+
+.career-quote{
+  font-size:2.5vw;
+  margin: .5em;
+}
+
+.career-person{
+  font-size:2vw;
+  margin: .5em;
+}
+
+.benefits{
+  margin: 1em 3em;
+  display:grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  padding-bottom: 3em;
+  color: var(--grey);
+  border-bottom: 2px solid var(--grey);
+}
+
+.benefits h2{
+  grid-column: 1/-1;
+  font-size: 3rem;
+}
+
+.benefit h3{
+  color: var(--orange);
+ }
+
+ .current-openings{
+   margin: 3em;
+   color: var(--grey);
+ }
+
+ .current-openings h2{
+   text-align: center;
+   margin-bottom: 6rem;
+ }
+
+ .current-openings p{
+   font-size: 2.5rem;
+ }
 
 /* ---------------------------------------------------------------------------------------------------------------------
-5. FOOTER
+6. FOOTER
 --------------------------------------------------------------------------------------------------------------------- */
 
 footer {
