@@ -37,6 +37,7 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   font-weight: lighter;
+  height: 100vh;
 }
 
 .page-text{
@@ -338,11 +339,11 @@ body#home {
    margin-bottom: 6rem;
  }
 
- .current-openings p{
+ /* .current-openings p{
    font-size: 2.5rem;
- }
+ } */
 
- .job{
+ .icon-text{
    margin: 20px 0;
    display:grid;
    grid-gap: 20px;
@@ -350,7 +351,12 @@ body#home {
    /* align-items: center; */
  }
 
- .job img{
+ .icon-text p{
+   font-size: 2.5rem;
+
+ }
+
+ .icon-text img{
    width: 100%;
  }
 
@@ -359,8 +365,74 @@ body#home {
 
  }
 
+ /* ---------------------------------------------------------------------------------------------------------------------
+ 6. CONTACT PAGE
+ --------------------------------------------------------------------------------------------------------------------- */
+.contact-wrapper{
+  margin: 0 3em;
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  grid-gap: 20px;
+  font-family: 'Dosis', sans-serif;
+  color: var(--grey);
+  align-content: start;
+}
+
+.contact-form form{
+  margin: auto;
+  width: 80%;
+}
+
+.contact-form input, textarea{
+  margin: .3rem;
+  width: 100%;
+  height: 38px;
+  border: 2px solid var(--grey);
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 1.75rem;
+}
+
+.contact-form input:focus, textarea:focus{
+  outline:none;
+}
+
+.contact-form textarea{
+  height: 150px;
+}
+
+input.submit{
+  background-color: var(--orange);
+  color:white;
+  border:2px solid var(--orange);
+}
+
+input.submit:hover {
+  background-color: white;
+  color:var(--orange);
+  border:2px solid var(--orange);
+}
+
+.contact-heading{
+  grid-column: 1/-1;
+}
+
+.contact p{
+  font-size: 2rem;
+}
+
+.icon-text a{
+  text-decoration: none;
+  color: var(--grey);
+  font-size: 2rem;
+
+}
+
+
+
+
 /* ---------------------------------------------------------------------------------------------------------------------
-6. FOOTER
+7. FOOTER
 --------------------------------------------------------------------------------------------------------------------- */
 
 footer {
