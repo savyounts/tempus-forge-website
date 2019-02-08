@@ -206,6 +206,16 @@ body#home {
   border-bottom: 2px solid #4e4d4e;
   padding: 20px 100px;
   margin: 3em;
+  text-align: right;
+}
+
+.project-container:nth-child(odd) .project-text{
+  order:2;
+  text-align: left;
+
+}
+.project-container:nth-child(odd) img{
+  order:1;
 }
 
 .project-details {
