@@ -202,7 +202,6 @@ body#home {
   grid-gap: 20px;
   align-items: center;
   justify-items: center;
-  justify-content: center;
   border-bottom: 2px solid #4e4d4e;
   padding: 20px 100px;
   margin: 3em;
@@ -221,6 +220,7 @@ body#home {
 .project-details {
   display:grid;
   grid-template-columns: repeat(2, 1fr);
+  align-items: center;
   grid-gap: 20px;
   width: 80%;
   color: var(--grey);
