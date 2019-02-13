@@ -76,7 +76,7 @@ nav {
 
 }
 
-nav a{
+nav a, .overlay-nav a{
   padding: 0 1em;
   color: #bd8647;
   font-family: 'Dosis', sans-serif;
@@ -86,7 +86,7 @@ nav a{
 
 }
 
-nav a:hover{
+nav a:hover, .overlay-nav a:hover{
   text-decoration: none;
   color: white;
 
@@ -96,15 +96,23 @@ nav a:hover{
   display:none;
 }
 
-.dropdown{
-  background-color: var(--grey);
-  float: left;
-  display: none;
-}
+.overlay {
+      position: fixed;
+      background: rgba(0, 0, 0, 0.8);
+      top: 68px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: none;
+      z-index: 2;
+    }
 
-.dropdown a{
-  color:white;
-  display:block;
+.overlay-nav a{
+  display: block;
+  margin: 1em auto;
+  text-align: center;
+  font-size: 4em;
+  width: 100%;
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------
