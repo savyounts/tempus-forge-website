@@ -5,8 +5,10 @@ Table of Contents
 2. HOME PAGE
 3. ABOUT PAGE
 4. PROJECTS PAGE
-5. FOOTER
-6. RESPONSIVE
+5. CAREERS
+6. CONTACT
+7. FOOTER
+8. RESPONSIVE
 --------------------------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------------------
 0. SITE LAYOUT
@@ -408,17 +410,13 @@ body#home {
  --------------------------------------------------------------------------------------------------------------------- */
 .contact-wrapper{
   margin: 0 3em;
-  display:grid;
-  grid-template-columns:repeat(2, 1fr);
-  grid-gap: 20px;
   font-family: 'Dosis', sans-serif;
   color: var(--grey);
   align-content: start;
 }
 
 .contact-form form{
-  margin: auto;
-  width: 80%;
+  width: 600px;
 }
 
 .contact-form input, textarea{
@@ -459,13 +457,6 @@ input.submit:hover {
   font-size: 2rem;
 }
 
-.icon-text a{
-  text-decoration: none;
-  color: var(--grey);
-  font-size: 2rem;
-
-}
-
 
 
 
@@ -482,6 +473,7 @@ footer {
   background-color: white;
   grid-row: span 1 / -1;
   grid-column-gap: 0;
+  text-align: center;
 }
 
 .footer-home{
@@ -525,9 +517,13 @@ footer {
     grid-row-gap: 20px;
 
   }
+  /*-------------------------------------------------------------------------------------------------------------------
+  CONTACT */
+
+  .contact-form form{
+    width: 100%;
+  }
 }
-
-
 @media only screen and (max-width: 950px) {
 
   nav{
@@ -578,11 +574,7 @@ footer {
   }
   /*-------------------------------------------------------------------------------------------------------------------
   CONTACT */
-  form{
-    display:none;
-  }
 
-}
 
 @media only screen and (max-width: 1190px) {
   .project-container{

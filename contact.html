@@ -41,39 +41,27 @@
 
       <div class="contact-wrapper">
         <h1 class='page-heading contact-heading'>GIVE US A SHOUT</h1>
-        <section class="contact-info">
-          <p>Contact our office at Tempus Forge, Incorporated for additional information. All inquiries and email correspondence is answered in a timely* manner (because we don't sleep)...</p>
-          <p class="small">* Assumes you believe in time as a construct.</p>
-          <div class="contact icon-text">
-            <img src="images/email.svg" alt="email"/>
-            <a href="mailto:john@tempusforge.com?subject=Inquiry from Our Site">john@tempusforge.com</a>
-          </div>
-          <div class="contact icon-text">
-            <img src="images/phone.svg" alt="email"/>
-            <a href="tel:720-593-0745">(720) 593-0745</a>
-          </div>
-          <div class="contact icon-text">
-            <img src="images/address.svg" alt="email"/>
-            <p>445 N Broadway Suite 24 Denver, CO. 80203</p>
-          </div>
-        </section>
+        <section >
+          <p>For information about our company or our products, please fill out the form. </p>
+          <section class="contact-form">
+            <form action="//formspree.io/john@tempusforge.com" method="POST">
 
-        <section class="contact-form">
-          <form action="//formspree.io/john@tempusforge.com" method="POST">
+               <input type="text" name="name" placeholder="Name" id="name" required />
 
-             <input type="text" name="name" placeholder="Name" id="name" required />
+               <input type="email" name="_replyto" placeholder="example@domain.com" id="_replyto" required />
 
-             <input type="email" name="_replyto" placeholder="example@domain.com" id="_replyto" required />
+               <input type="text" name="_subject" placeholder="Subject" id="subject" required />
 
-             <input type="text" name="_subject" placeholder="Subject" id="subject" required />
+               <textarea name="message" rows="1" placeholder="Message" id="message" required></textarea>
 
-             <textarea name="message" rows="1" placeholder="Message" id="message" required></textarea>
+               <input class="hidden" type="text" name="_gotcha" style="display:none" />
+              <input class="button submit" type="submit" value="Send" />
+            </form>
 
-             <input class="hidden" type="text" name="_gotcha" style="display:none" />
-            <input class="button submit" type="submit" value="Send" />
-          </form>
+          </section>
 
         </section>
+
 
 
     </div>
