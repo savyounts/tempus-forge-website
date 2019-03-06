@@ -169,11 +169,12 @@ body#home {
 .page-top {
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  margin: 0 3em;
+  margin: 0 0 0 3em;
 }
 
 .gear{
-  width: 50vw;
+  width: 40vw;
+  justify-self: right;
 }
 
 .bold {
@@ -468,8 +469,7 @@ footer {
   display:grid;
   justify-content: center;
   place-items: center center;
-  grid-template-columns: repeat(3, auto);
-  padding: .5em;
+  grid-template-columns: repeat(2, auto);
   background-color: white;
   grid-row: span 1 / -1;
   grid-column-gap: 0;
